@@ -25,6 +25,19 @@ export class TasksService {
   }
 
   getTaskById(id: string): Task | string {
+    const result = this.getTask(id);
+    return result;
+  }
+
+  deleteTaskById(id: string): Task | string {
+    const result = this.getTask(id);
+    if (typeof result !== 'string') {
+      this.tasks = this.tasks.filter((task) => task.id !== id);
+    }
+    return result;
+  }
+
+  private getTask(id: string): Task | string {
     const result = this.tasks.find((task) => task.id === id);
 
     return result !== undefined ? result : `Tasks with id ${id} not found`;
