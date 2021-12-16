@@ -3,3 +3,11 @@ GET http://localhost:3000/tasks
 ###
 POST http://localhost:3000/tasks
 Content-Type: application/json
+
+{
+  "title": "Test title",
+  "description": "Test description"
+}
+
+###
+GET http://localhost:3000/tasks/f1b04d8d-f04f-49d7-adfd-eb2070292e05
