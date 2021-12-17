@@ -5,11 +5,20 @@ POST http://localhost:3000/tasks
 Content-Type: application/json
 
 {
-  "title": "Test title 3",
+  "title": "Test title 2",
   "description": "Test description 2"
 }
 
 ###
-GET http://localhost:3000/tasks/2893315ss3-a89a-403e-9869-03d945fdccd4
+GET http://localhost:3000/tasks/08521ce7-b958-4e19-835c-bd5f03d0ad45
 ###
-DELETE http://localhost:3000/tasks/del/0a95b762-f79f-4e12-8c43-2802af2434bf
+DELETE http://localhost:3000/tasks/08521ce7-b958-4e19-835c-bd5f03d0ad45
+###
+PATCH  http://localhost:3000/tasks/08521ce7-b958-4e19-835c-bd5f03d0ad45/status
+Content-Type: application/json
+
+{
+  "status": "IN_PROGRESS"
+}
+###
+GET http://localhost:3000/tasks?description=Test
