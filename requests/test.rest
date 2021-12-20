@@ -6,11 +6,11 @@ Content-Type: application/json
 
 {
   "title": "empty description",
-  "description": ""
+  "description": "Some description"
 }
 
 ###
-GET http://localhost:3000/tasks/08521ce7-b958-4e19-835c-bd5f03d0ad45
+GET http://localhost:3000/tasks/70a16d74-c910-4761-a6fd-6bc1181ea103
 ###
 DELETE http://localhost:3000/tasks/08521ce7-b958-4e19-835c-bd5f03d0ad45
 ###
