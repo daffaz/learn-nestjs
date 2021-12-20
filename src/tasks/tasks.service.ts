@@ -55,11 +55,9 @@ export class TasksService {
     return result;
   }
 
-  updateTaskStatus(id: string, status: TaskStatus): Task | string {
+  updateTaskStatus(id: string, status: TaskStatus): Task {
     const result = this.getTask(id);
-    if (typeof result !== 'string') {
-      result.status = status;
-    }
+    result.status = status;
     return result;
   }
 

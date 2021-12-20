@@ -14,11 +14,11 @@ GET http://localhost:3000/tasks/70a16d74-c910-4761-a6fd-6bc1181ea103
 ###
 DELETE http://localhost:3000/tasks/08521ce7-b958-4e19-835c-bd5f03d0ad45
 ###
-PATCH  http://localhost:3000/tasks/08521ce7-b958-4e19-835c-bd5f03d0ad45/status
+PATCH  http://localhost:3000/tasks/358dc4d9-a32e-48a8-975a-79c7d5848620/status
 Content-Type: application/json
 
 {
-  "status": "IN_PROGRESS"
+  "status": "OPEN"
 }
 ###
-GET http://localhost:3000/tasks?status=OPEN&description=Test
+GET http://localhost:3000/tasks?status=OPEN
